@@ -1,6 +1,10 @@
 + 001. JAVA
 1. java??
 
-2. java setting
+2/ java
+3. java setting
+4. java p
 
-3. 처음으로 작성해보는 자바 
+5. 처음으로 작성해보는 자바 
+=  vm
+
