@@ -22,7 +22,8 @@ public class Var001 {
 		//3. 변수명 $_소문자4
 		//int $1=1;  int _2=2;  int=a3bc=3; int=void;
 		//int static; int package; int class;
-		System.out.println($1+"\t"+_2+"\t"+a3bc);
+//		System.out.println($1+"\t"+_2+"\t"+a3bc);
 		
 		
 	}	
+}
