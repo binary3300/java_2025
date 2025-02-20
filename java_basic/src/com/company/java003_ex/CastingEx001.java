@@ -16,5 +16,6 @@ public class CastingEx001 {
 		summit = first / second;
 		//출력
 		System.out.print(summit);
+		scan.close();
 	}
 }

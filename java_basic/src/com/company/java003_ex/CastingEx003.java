@@ -23,5 +23,7 @@ public class CastingEx003 {
 		
 		//String sstr = (str)bstr += 32;
 		System.out.println(ch);
+		
+		scan.close();
 	}
 }
