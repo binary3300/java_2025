@@ -26,7 +26,7 @@ public class IfEx008 {
 		
 		//판단
 		sum = kor + math + eng;
-		arry = sum/3.0f;
+		arry = sum/3.0f; //float랑 +-*/하는 정수1234657은 .0으로 쓰고 뒤에 f를 붙여야 float로 인식하고 연산이 됨 
 		//String arry2 = Integer.toString(arry); 코파일럿한테 물어봤음..
 		
 		if (arry >=60 && kor < 40 || eng < 40 || math < 40) {thx = "불합격";}
