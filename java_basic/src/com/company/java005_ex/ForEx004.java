@@ -1,6 +1,6 @@
 package com.company.java005_ex;
 
-public class FoeEx004 {
+public class ForEx004 {
 	public static void main(String[]args) {
 		/* 1~10까지 3의 배수 갯수 출력
 		 * 

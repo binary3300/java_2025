@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BankMiniproject {
 	public static void main(String[]args) {
 		//####변수
-		int money = 0 , age = 0 ;
+		int money = 0 , age = 0;
 		char id=' ', pw=' ';
 		Scanner scan = new Scanner(System.in);
 		
@@ -77,7 +77,8 @@ public class BankMiniproject {
 						if(temp_id == id && temp_pw == pw) {System.out.println("입금할 금액: ");
 															temp_money = scan.nextInt();
 															System.out.println("====입금완료!");
-															System.out.println("잔액: "+ (temp_money + money) )
+															System.out.println("잔액: "+ (temp_money + money));
+															money += temp_money + money;
 															;}
 						else {System.out.println("사용자 정보를 확인해주세요");}
 				
@@ -94,7 +95,8 @@ public class BankMiniproject {
 						if(temp_id == id && temp_pw == pw) {System.out.println("출금할 금액: ");
 															out_money = scan.nextInt();
 															System.out.println("==출금 완료");
-															System.out.println("잔액: " + (money-out_money) );
+															System.out.println("잔액: " + (money - out_money) );
+															money -= money-out_money;
 															}
 				
 				
@@ -110,8 +112,8 @@ public class BankMiniproject {
 						
 						if(temp_id == id && temp_pw == pw)
 								{System.out.println("계좌를 삭제하시겠습니까?\n" + "(Y/N)"); yon = scan.next().charAt(0);
-													if(yon == 'Y') {id = ' '; pw = ' ';}
-													else if( yon == 'N'){System.out.println("감사합니다.");}
+													if(yon == 'Y' || yon == 'y') {id = ' '; pw = ' '; System.out.println("그동안 감사했습니다.");}
+													else if( yon == 'N' || yon == 'n'){System.out.println("감사합니다.");}
 													else {System.out.println("바르게 입력해주세요.");}
 								}
 				

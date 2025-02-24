@@ -1,6 +1,6 @@
 package com.company.java005_ex;
 
-public class FoeEx003 {
+public class ForEx003 {
 	public static void main(String[]args) {
 		//1+2+3+4+5+6+7+8+9+10=시스템프린트
 		/*1  2  3  4  5
