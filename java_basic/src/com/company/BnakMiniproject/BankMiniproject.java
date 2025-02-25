@@ -11,7 +11,8 @@ public class BankMiniproject {
 		
 		//####입력
 		
-//		System.out.println("WELCOME");
+		
+		System.out.println("WELCOME");
 //		switch (first) {
 //		case 1: System.out.println( "*1. 추가." );
 //		case 2: System.out.println( "*2. 조회." );
@@ -33,6 +34,8 @@ public class BankMiniproject {
 			System.out.println( "*9. 종료." );
 			System.out.println("입력>>>");
 			first = scan.nextInt();
+			
+			
 			//step2 기능
 			switch(first) {
 				case 1: System.out.println("추가입니다.");
@@ -46,6 +49,7 @@ public class BankMiniproject {
 						System.out.println("나이:_"); age = scan.nextInt();
 						System.out.println("잔액:_"); money = scan.nextInt();
 				break; //end case1
+				
 				case 2: System.out.println("조회입니다.");
 						/* 스텝4
 						 * 변수 입시변수 temp_id; 임시변수 temp_pw;
@@ -65,6 +69,7 @@ public class BankMiniproject {
 						
 				
 				break; //end case2
+				
 				case 3: System.out.println("입금입니다.");
 						/* 
 						 * 
@@ -83,6 +88,7 @@ public class BankMiniproject {
 						else {System.out.println("사용자 정보를 확인해주세요");}
 				
 				break; //end case3
+				
 				case 4: System.out.println("출금입니다.");
 						/* 
 						 * 
@@ -101,6 +107,7 @@ public class BankMiniproject {
 				
 				
 				break; //end case4
+				
 				case 5: System.out.println("삭제입니다.");
 						/* 
 						 * 
@@ -118,6 +125,7 @@ public class BankMiniproject {
 								}
 				
 				break; //end case5
+				
 				case 9: System.out.println("종료입니다.");
 						/* 
 						 * 
