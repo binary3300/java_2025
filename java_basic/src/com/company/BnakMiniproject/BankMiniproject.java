@@ -12,7 +12,7 @@ public class BankMiniproject {
 		//####입력
 		
 		
-		System.out.println("WELCOME");
+		System.out.println("WELCOME! (주)마루킁킁은행");
 //		switch (first) {
 //		case 1: System.out.println( "*1. 추가." );
 //		case 2: System.out.println( "*2. 조회." );
@@ -83,7 +83,7 @@ public class BankMiniproject {
 															temp_money = scan.nextInt();
 															System.out.println("====입금완료!");
 															System.out.println("잔액: "+ (temp_money + money));
-															money += temp_money + money;
+															money += temp_money;
 															;}
 						else {System.out.println("사용자 정보를 확인해주세요");}
 				
@@ -102,7 +102,7 @@ public class BankMiniproject {
 															out_money = scan.nextInt();
 															System.out.println("==출금 완료");
 															System.out.println("잔액: " + (money - out_money) );
-															money -= money-out_money;
+															money -= out_money;
 															}
 				
 				
