@@ -16,7 +16,9 @@ public class Arrey2E006_1 {
 		int[][] arr= new int[3][4];
 		int data = 10;
 		
-		for(int ch=0; ch<arr.length; ch++) { for(int kan=0; kan<arr[ch].length; kan++) { arr[ch][kan]=data; data+=1; } }
+		for(int ch=0; ch<arr.length; ch++) { 
+			for(int kan=0; kan<arr[ch].length; kan++) { 
+				arr[ch][kan]=data; data+=1; } }
 
 		
 	}//
