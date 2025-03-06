@@ -32,7 +32,7 @@ public class Bank_이진수_Miniproject {
 			System.out.println( "*4. 출금." );
 			System.out.println( "*5. 삭제." );
 			System.out.println( "*9. 종료." );
-			System.out.println("입력>>>");
+			System.out.print("입력>>>");
 			first = scan.nextInt();
 			
 			if(first==1) {
@@ -42,10 +42,11 @@ public class Bank_이진수_Miniproject {
 				 * 입력받기 pw
 				 * 입력받기 balance
 				 * */
-				System.out.println("ID:_ "); id = scan.next().charAt(0);
-				System.out.println("PW:_"); pw = scan.next().charAt(0);
-				System.out.println("나이:_"); age = scan.nextInt();
-				System.out.println("잔액:_"); money = scan.nextInt();
+				System.out.print("ID:_ "); id = scan.next().charAt(0);
+				System.out.print("PW:_"); pw = scan.next().charAt(0);
+				System.out.print("나이:_"); age = scan.nextInt();
+				System.out.print("잔액:_"); money = scan.nextInt();
+				System.out.println();
 			}
 			
 			
@@ -56,7 +57,7 @@ public class Bank_이진수_Miniproject {
 					System.out.println("ID_"); temp_id = scan.next().charAt(0);
 					System.out.println("PW_"); temp_pw = scan.next().charAt(0);
 					
-					if(  !(temp_id == id && temp_pw == pw )) { System.out.println("사용자정보를 확인해주세요");  break;}
+					if(  !(temp_id == id && temp_pw == pw )) { System.out.println("사용자정보를 확인해주세요"); System.out.println();  break;}
 					
 					
 					else if(first==2) {
@@ -73,26 +74,29 @@ public class Bank_이진수_Miniproject {
 								"\n pw"+ ":"+ pw + 
 								"\n 나이"+ ":" + age +
 								"\n 잔액"+ ":"+ money);
+								System.out.println();
 					}else if(first==3) {
 						System.out.println("입금입니다.");
-						System.out.println("입금할 금액: ");
+						System.out.print("입금할 금액: ");
 						int temp_money = scan.nextInt();
 						System.out.println("====입금완료!");
 						System.out.println("잔액: "+ (temp_money + money));
 						money += temp_money;
+						System.out.println();
 					}else if(first==4) {
 						System.out.println("출금입니다.");
-						System.out.println("출금할 금액: ");
+						System.out.print("출금할 금액: ");
 						int out_money = scan.nextInt();
 						System.out.println("==출금 완료");
 						System.out.println("잔액: " + (money - out_money) );
 						money -= out_money;
+						System.out.println();
 					}else if(first==5) {
 					
 						System.out.println("계좌를 삭제하시겠습니까?\n" + "(Y/N)"); 
 						char yon = scan.next().charAt(0);
-						if(yon == 'Y' || yon == 'y') {id = ' '; pw = ' '; System.out.println("그동안 감사했습니다.");}
-						else if( yon == 'N' || yon == 'n'){System.out.println("감사합니다.");}
+						if(yon == 'Y' || yon == 'y') {id = ' '; pw = ' '; System.out.println("그동안 감사했습니다.");System.out.println();}
+						else if( yon == 'N' || yon == 'n'){System.out.println("감사합니다.");System.out.println();}
 						else {System.out.println("바르게 입력해주세요.");}
 					}
 				break; 
