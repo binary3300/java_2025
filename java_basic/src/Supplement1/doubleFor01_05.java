@@ -1,5 +1,8 @@
 package Supplement1;
-public class doubleFor01 {
+
+import javax.annotation.processing.SupportedSourceVersion;
+
+public class doubleFor01_05 {
 	public static void main(String[] args) {
 		/* 1) 이중for
 		 * ★★★
@@ -28,13 +31,40 @@ public class doubleFor01 {
 		}
 		
 		/* 3) 이중for
-		 * ★★★      ★를 출력 ★를 출력 ★를 출력
-		 * ★★		★를 출력 ★를 출력
-		 * ★		★를 출력
+		 * ★★★      ch가 0일대 kan을 3개
+		 * ★★		ch가 1일때 kan을 2개
+		 * ★		ch가 2일때 kan을 1개
 		 */
-		String data2 = "★";
-		for(int ch=1; ch<=3; ch++) {for(int kan=3; kan>=1; kan--) {System.out.println(data2);}}
+		for(int ch=0; ch<3; ch++) {
+			for(int kan=3; kan>ch; kan--) {
+				System.out.print("★");
+				}System.out.println();
+		}
 		
+		/* 4) 이중for
+		 *111	ch가 0일때 kan은 111
+		 *222	ch가 1일때 kan은 111+111
+		 *333	ch가 2일때 kan은 111+111+111
+		 */
+		int data2 = 111;
+		for(int ch=0; ch<3; ch++){
+			for(int kan=0; kan<ch; kan++){
+				{System.out.print(data2);}
+				data2+=111; System.out.println();}
+		}
+		System.out.println("----------------------");
+		/*
+		 * 5)이중for
+		 * 1	층이 0일때 칸은 (1)
+		 * 22	층이 1일때 칸은 (2)(2)
+		 * 333	층이 2일때 칸은 (3)(3)(3)
+		 */
+		int data3 = 0;
+		for(int ch=0; ch<=3; ch++) {
+			for(int kan=0; kan<ch; kan++) {
+				System.out.print(data3);
+			} data3+=1; System.out.println();
+		}//와 해냄
 		
 		
 		
