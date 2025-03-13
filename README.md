@@ -1,3 +1,17 @@
+#### 18 2025-03-13
+어제까지 배웠던 파트2랑 어제 아주살짝 맛만 봤던 IO까지 복습문제도 풀고나서 본격적으로 javaIO수업 들었다.
+내가 직접 컴퓨터의 경로에 byte단위로 텍스트파일을 만들어서 내보내고(OutputStream)  , 자바가 파일을 읽어서 콘솔에 출력하는(InputStream) Stream
+
+컴퓨터의 경로에 char단위로 텍스트파일을 만들어서 내보내고(Writer)  , 자바가 파일을 읽어서 콘솔에 출력하는(Reader) FileWriter/FileReader
+
+컴퓨터의 경로에 존재하는 이미지img 파일을 byte단위로 읽어들여서 하나 더 만들고(InputStream) 이름 바꿔서 하나 더 만들수있다(OutputStream)
+
+빨리 읽으라고 순서를 재촉하는 buffered
+
+String에 문자열을 넣을때마다 주소가 바뀌면 heap area터지니까 주소 그대로 쓸 수 있는 StringBuffer
+
+그   리   고   내   가   네  이   버   의   서   버   등   골   을   빼   먹   겠   다!
+
 #### 17 2025-03-12
 파트2의 복습문제와 ArrayList<Milk>, HashSet<Milk>, HashMap<Integer, Milk> 도 풀고....
 
