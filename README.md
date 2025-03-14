@@ -1,6 +1,7 @@
 #### 18 2025-03-13
 어제까지 배웠던 파트2랑 어제 아주살짝 맛만 봤던 IO까지 복습문제도 풀고나서 본격적으로 javaIO수업 들었다.
-내가 직접 컴퓨터의 경로에 byte단위로 텍스트파일을 만들어서 내보내고(OutputStream)  , 자바가 파일을 읽어서 콘솔에 출력하는(InputStream) Stream
+
+내가 직접 컴퓨터의 경로에 byte단위로 텍스트파일을 만들어서 내보내고(OutputStream) , 자바가 파일을 읽어서 콘솔에 출력하는(InputStream) Stream
 
 컴퓨터의 경로에 char단위로 텍스트파일을 만들어서 내보내고(Writer)  , 자바가 파일을 읽어서 콘솔에 출력하는(Reader) FileWriter/FileReader
 
