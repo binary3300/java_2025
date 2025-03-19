@@ -1,5 +1,10 @@
-:four_leaf_clover: 
-### 19 2025-03-14
+### 20 2025-03-18 :four_leaf_clover:
+리드미에 이모지도 붙이고 mysql로 테이블에 정보더하는것도 배우고 이클립스에서 jsp하는것도 배우고 엄청많이 배웠다.
+
+깃허브에 지금 똑바로 올리고있는게 맞나? mysql이랑 톰캣이랑 이것저것 다 깔았더니 감당이 안되는데  
+
+
+### 19 2025-03-14 :four_leaf_clover:
 Thread를 배웠다. 클래스를 여러개 만들어서 실행하면 순서대로 실행하느라 한번에 하나씩만 가능한데,
 
 스레드로 만들면 동시에 두개 클래스를 운용이 가능하다. 아마 세개네개도 되겠지...
@@ -8,8 +13,8 @@ Thread를 배웠다. 클래스를 여러개 만들어서 실행하면 순서대�
 
 오후에는 네트워크를 순식간에 지나갔다. 내 컴퓨터 안에서 서버랑 클라이언트를 만들어서 둘이 오며가며 채팅을 주고받는 간단한 채팅도 구현했다. 짱~
 
-:four_leaf_clover:
-### 18 2025-03-13
+
+### 18 2025-03-13 :four_leaf_clover:
 어제까지 배웠던 파트2랑 어제 아주살짝 맛만 봤던 IO까지 복습문제도 풀고나서 본격적으로 javaIO수업 들었다.
 
 내가 직접 컴퓨터의 경로에 byte단위로 텍스트파일을 만들어서 내보내고(OutputStream) , 자바가 파일을 읽어서 콘솔에 출력하는(InputStream) Stream
@@ -24,8 +29,8 @@ String에 문자열을 넣을때마다 주소가 바뀌면 heap area터지니까
 
 그   리   고   내   가   네  이   버   의   서   버   등   골   을   빼   먹   겠   다!
 
-:four_leaf_clover:
-### 17 2025-03-12
+
+### 17 2025-03-12 :four_leaf_clover:
 파트2의 복습문제와 ArrayList<Milk>, HashSet<Milk>, HashMap<Integer, Milk> 도 풀고....
 
 자바 api의 함수형 인터페이스도 6가지 하나씩 써봤다.... 
@@ -37,13 +42,13 @@ IO까지 나갔다... 자바에서 파일이랑 폴더도 만들어봤다. 근�
 
 
 
-:four_leaf_clover:
-### 16 2025-03-11
+
+### 16 2025-03-11 :four_leaf_clover:
 어제 다 못배운 맵, 람다, 아주많은 복습문제! 이중for연습문제도...
 
 
-:four_leaf_clover:
-### 15 2025-03-10
+
+### 15 2025-03-10 :four_leaf_clover:
 class 복주머니{
 
   프라이빗 변수~~~~~ 
@@ -57,8 +62,8 @@ HashSet<복주머니> 내용물 = new HashSet<>();
 
 
 
-:four_leaf_clover:
-### 13 2025-03-07
+
+### 13 2025-03-07 :four_leaf_clover:
 다음주에 자바가 마무리라니 세상에마상에
 
 익셉션... 자바에서 나는 내가 손을 댈 수 없는 오류...말고... 그 있잖아 그....
@@ -83,67 +88,67 @@ HashSet<복주머니> 내용물 = new HashSet<>();
 
 
 
-:four_leaf_clover:
-### 12 2025-03-06
+
+### 12 2025-03-06 :four_leaf_clover:
 어제는 자리바꾸고 링크트리로 깃허브에 올리느라 다른분 계정으로 올렸다. 지송합니뎌...
 
 뱅크 미니프로젝트 완성
 
-https://youtu.be/WIsp8MCjnF4?si=nLXVXpfyxWWSIFwn 
+ https://youtu.be/WIsp8MCjnF4?si=nLXVXpfyxWWSIFwn
 
 
 
 
-:four_leaf_clover:
-### 11. 2025-03-04
+
+### 11. 2025-03-04 :four_leaf_clover:
 클래스 연결
 
 
-:four_leaf_clover:
-### 9. 2025-02-27
+
+### 9. 2025-02-27 :four_leaf_clover:
 method(입력필요하면 말해){날 호출하면 이런행동을 할거야}
 
 
-:four_leaf_clover:
-### 8. 2025-02-26
+
+### 8. 2025-02-26 :four_leaf_clover:
 인트 어레이[][] = 뉴 인트[2][3]  포(2자리값){포(3자리값) [2자리값][3자리값]=데이터}
 
 
-:four_leaf_clover:
-### 7. 2025-02-25
+
+### 7. 2025-02-25 :four_leaf_clover:
 for(좌표){for(좌표){for(좌표){for{1,2,3,4 + 1,2,3,4}}}
 
 
-:four_leaf_clover:
-### 6. 2025-02-24
+
+### 6. 2025-02-24 :four_leaf_clover:
 미니프로젝트, for/while/do while/arry html 조금 정리.
 
 
-:four_leaf_clover:
-### 5. 2025-02-21
+
+### 5. 2025-02-21 :four_leaf_clover:
 for while do while로 미니프로젝트를 만들었는데 일단 완성만 했고 연산이 잘 되게 고치는건 나중일이다... 오늘은 링크트리로 큰 문제가 없었다. 체크 하나 해줘야했슨
 
 
-:four_leaf_clover:
-### 4. 2025-02-20
+
+### 4. 2025-02-20 :four_leaf_clover:
 if문이랑 switch 배웠다. 변수들을 int String float 바꾸는거에 애로사항이 많다. 답지 참고하면 진짜 속시원함
 
 깃허브 올릴때. 풀 먼저 받아서 전날 이렇게 리드미 쓴거 받고나서 커밋하고 푸쉬하기.
 
 
-:four_leaf_clover:
-### 3. 2025-02-19
+
+### 3. 2025-02-19 :four_leaf_clover:
 캐스트 오퍼레이터 열심히했다. css할때 배운 &&나 ||를 다시봤다.
 그리고 링크트리랑 깃허브르 ㄹ연결하는데 좀 애로사항이 있어서 애쓰다가 힘냈다. 이겨냈다.
 
 
-:four_leaf_clover:
-### 2. 2025-02-18
+
+### 2. 2025-02-18 :four_leaf_clover:
 출력
 변수
 
-:four_leaf_clover:
-### 1. 2025-02-17 
+
+### 1. 2025-02-17  :four_leaf_clover:
 welcome!
 git(로컬저장소~원격저장소)
 java(설치, eclipse)
