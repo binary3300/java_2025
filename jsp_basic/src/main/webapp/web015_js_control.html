@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>DBDBIG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!--                                    -->
+<!--                                    -->
+<!--                                    -->
+<!--                                    -->
+<!--                                    -->
+<div class="p-3 bg-primary text-white ">
+  <h1>007. CONTROL</h1>
+  <ol>
+    <li>IF</li>
+    <li>SWITCH</li>
+    <li>FOR/WHILE/DO WHILE</li>
+  </ol>
+</div>
+<!--                                    -->
+<!--                                    -->
+<div class="container card  my-3">
+  <h3  class="card-header">007. CONTROL - Step1. IF</h3>
+  <div class="card-body">
+    <h4>Step1. IF</h4>
+    <div>
+		    <script>
+			 		// 1. 출력구문
+			      document.write("정리 1, 출력");
+			      document.write("<p>하고싶은말</p>");
+			      console.log("안녕 자바스크립트!");
+			      
+			      // 2. var,	let, const
+			      document.write("정리2, var, let, const")
+			      //런타임보다 먼저 실행하는 어쩌구들- 호이스팅(var, function, class,,,,)
+			      //var - 전역변수
+			      //let - 지역변수 (변수 중복 선언 불가)
+			      //const - 상수 
+			      
+			      // 3. 자료형
+			      document.write("정리3, 자료형");
+			      let d1; console.log(d1);
+			      d1=10; d1=3.14; d1="abc"; d1=true; d1=["lulu", 3, 7.8]; d1={};
+			      d1=function(){};
+			      
+			      test3 = 10;
+			      console.log(test3 + "10");  //원하는 결과물 20, 실제 결과뭉 1010
+			      console.log( typeof(test3) + typeof("10"));
+			      console.log( test3 + Number("10"));
+			      
+			      // 4. 알림창
+			      document.write("<br/>정리4, 알림창");
+		
+		    </script>
+				    <bytton class="btn btn-primary" onclick="alert('홍길동')">alert</bytton>
+				    <bytton class="btn btn-primary" onclick="prompt('물어보고싶은말?')" >prompt</bytton>
+				    <bytton class="btn btn-primary" onclick="confirm('레알?')" >confirm</bytton>
+			    
+				    <h4>EX 1</h4>
+				    <bytton class="btn btn-success" onclick="yourname()" >YOUR NAME</bytton>
+				    <script>
+				    function yourname(){
+				    	let name = prompt('당신의 이름은?');	//1 사용자에게 이름 입력받아
+				    	alert('반갑습니다~' + name + '님'); 	//2 반갑습니다 고객님~!
+				    }
+				    </script>
+				    <h4>EX 2</h4>
+				    <button class="btn btn-success" onclick="num()" >PLUS</button>
+				    <script>
+				    function num(){
+				    	let num1 = prompt('① 숫자를 하나 입력해주세요'); //prompt로 받는 글자는 String이다 
+				    	let num2 = prompt('② 숫자를 하나 더 입력해주세요');
+				    	alert( num1 +'+'+ num2 +'='+ (Number(num1) + Number(num2)));
+				    };
+				    </script>
+				    <h4>Step1. IF</h4>
+				    <script>
+				    let if2 = 2;
+				    if(if1 == 2){console.log("2이다");}
+				    else{console.log('2가 아니다')};
+		    		</script>
+	</div>
+	
+
+  </div>
+  <!--     -->
+  <!--     -->
+  <hr/>
+  <div class="card-body">
+    <h4>EX</h4>
+    <pre>
+      평균을 입력하세요 __입력받기
+      만약 평균이 60점 이상(60점포함)이라면 합격, 아니면 불합격 출력
+    </pre>
+    <input type="button" value="ex1"  id="ex1"  title="버튼을 클릭하세요" class="btn btn-success "      />
+    <script>
+  // 작업위치  
+	/*if(조건) {  조건이 맞으면 true }else{   조건이 다르면 false } */ 
+	function ex_if(){
+		let result = '불합격';
+		let avg = ptompt("평균을 입력하세요");
+		if(avg>= 60){result = "합격"}
+		alert(result);
+	}</script>
+  </div>
+</div>
+
+
+
+
+<!--                                    -->
+<!--                                    -->
+<div class="container card  my-3">
+  <h3  class="card-header">007. CONTROL - Step2. SWITCH</h3>
+  <div class="card-body">
+    <h4>Step2. SWITCH</h4>
+    <script>
+    /*
+    swtich(  처리하고 싶은 대상    ){
+        case 대상의상태:    처리;  break;
+        case 대상의상태:    처리;  break;
+        case 대상의상태:    처리;  break;
+        default : 기본처리
+    } */
+
+    // 작업위치
+    
+    let sw = 2;
+    switch(sw){
+    	case 1: console.log('1이다');break; 
+    	case 2: console.log('2이다');break; 
+    	case 3: console.log('3이다');break; 
+    	default: console.log('1,2,3이 아니다');
+    };
+    
+    
+    
+    
+   
+    </script>
+  </div>
+  <!--     -->
+  <!--     -->
+  <hr/>
+  <div class="card-body">
+    <h4>EX</h4>
+    <pre>
+      4,5,6 중에 입력하세요
+      4번 월드콘  ,  5번 구구콘 , 6번 설레임 알림창을 띄우시오.
+    </pre>
+    <input type="button" value="switch1"  id="switch1"  title="버튼을 클릭하세요" class="btn btn-success onclick=prompt('숫자를 4, 5, 6중에서 입력해주세요')"  />
+    <script>
+  // 작업위치
+  //1. switch 
+       let  ice=Number(prompt('숫자를 4, 5, 6중에서 입력해주세요'));
+       switch(ice){
+         case 4 : alert('월드콘'); break;
+         case 5 : alert('구구콘'); break;
+         case 6 : alert('설레임'); break;
+       }
+  //2.  switch1    
+ 
+    </script>
+  </div>
+</div>
+
+
+
+
+<!--                                    -->
+<!--                                    -->
+<div class="container card  my-3">
+  <h3  class="card-header">007. CONTROL - Step3. FOR/WHILE/DO WHILE</h3>
+  <div class="card-body">
+    <h4>Step3. FOR/WHILE/DO WHILE</h4>
+      <script>
+      /* STEP1 for  - 반복횟수 알때
+         for(  초기문; 조건문; 증감문 ){  }
+      */
+        
+
+        //1. 영역 :  복붙-복사하는 한줄 { 반복되는 영역 }    -  {  console.log(1); }
+        //2. 변수 : {반복 영역 - 변수}                      -  {  console.log(i); }    
+        //3. 패턴 : for(시작; 종료; 변화) 
+        
+      // 작업위치
+      </script>
+  </div>
+  <!--     -->
+  <!--     -->
+  <hr/>
+  <div class="card-body">
+    <h4>EX</h4>
+    <pre>
+    for 
+    Q1)		1	2	3	4	5
+    Q2)		5	4	3	2	1
+    Q3)		2	4	6 
+    Q4)		hello1		hello2		hello3
+    Q5)		const list1 = [1,2,3,4,5];
+    </pre>
+    <script>
+      // for, while, do while
+      //A1)		1	2	3	4	5
+
+      for(let i = 1; i <= 5; i ++){console.log(i);}
+      
+      let j = 1;
+      while(j <= 5){console.log(j); j++}
+      
+      let k = 1;
+      do{console.log(k); k++} while(k<=5);
+      document.write("</br>");
+      //Q2)		5	4	3	2	1
+      for(let l=5; l>0; l--){console.log(l);}
+      
+      let m = 5;
+      while(m>0){console.log(m); m--}
+      
+      let n = 5;
+      do{console.log(n); n--}while(n>0);
+      document.write("</br>");
+      //Q3)		2	4	6 
+      for(let o = 2; o<7; o+=2){console.log(o)};
+      
+      let p = 2;
+      while(p<7){console.log(p); p+=2};
+      
+      let q = 2;
+      do{console.log(q); q+=2}while(q<7);
+      document.write("</br>");
+      //Q4)		hello1		hello2		hello3
+      for(let r = 1; r<4; r++){console.log('hello'+ r);}
+      
+      let s = 1;
+      while(s<4){console.log('hello' + s); s++};
+      
+      let t = 1;
+      do{console.log('hello' + t);t++}while(t<4);
+      
+      document.write("</br>");
+      //A2)		const list1 = [1,2,3,4,5];
+      //향상된 for, forEach
+      
+      //향상된 for >>>>>in(index) , of(object)<<<<<
+      const list1 = [1,2,3,4,5];
+      for( let u in list1 ){ document.write(u +"-"+ "\t"+ list1[u]+"<br\>"); }
+      
+      //forEach
+      list1.forEach( ( value, index, list1 )=>{
+    	  document.write(value +"/"+ index +"/"+ list1+"<br\>");
+      } );
+      
+      
+      //A3)	const list2 = ['a', 'b','c','d'];
+      //향상된 포문, 포이티
+      const list2 = ['a', 'b','c','d'];
+      for(let v in list2){document.write(list2[v] + "\t");};
+      document.write("</br>");
+      for(let v of list2){document.write(v + "\t");};
+      
+      document.write("</br>========================================== \t");
+      
+      list2.forEach( (value, index, list1) => {
+    	  document.write(value +"</br>"+ index +"</br>"+ list2);
+      });
+      
+   
+             
+    </script>
+  </div>
+</div>
+
+
+</body>
+</html>
