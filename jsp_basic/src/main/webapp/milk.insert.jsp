@@ -11,11 +11,27 @@
 //2 request.getParameter() 이용해서 데이터 받기
 	String oname = request.getParameter("oname");
 	int onum = Integer.parseInt( request.getParameter("onum") );
+	
 
 	//out.println(oname + "/" +onum);
 	
 	Connection conn = null; PreparedStatement pstmt = null; //ResultSet rset = null;  	values ('white',2,'127.0.0.1')
 	String sql = "insert into milk_order (oname, onum, oip) values (?,?,?);";
+	%>
+      <script>
+     	function form(){
+     		let oname = document.querySelector("#oname");
+     		let onum = document.querySelector("#onum");
+     		
+     		if(oname.value == ""){alert("구매하실 우유의 이름을 작성해주세요!"); oname.focus(); return false;}
+     		if(onum.value == ""){alert("구매하실 수량을 입력해주세요!"); onum.focus(); return false;}
+     		
+     	}
+     
+     
+     </script>
+	
+	<% %>
 	
 	try{
 			//3 Driver 연동

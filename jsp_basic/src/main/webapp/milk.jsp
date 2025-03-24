@@ -79,7 +79,6 @@ bg-secondary
 			      <td><%= mprice %></td>
 			    </tr>
 
-		
 		<%	
 			}
 			
@@ -177,7 +176,7 @@ bg-secondary
 			        	
 			        -->
 			        
-					<form action="milk.insert.jsp" method="post">
+					<form action="milk.insert.jsp" method="post" onsubmit="return form()">
 					  <div class="mb-3 mt-3">
 					    <label for="email" class="form-label" style="font-weight:bold;">주문할 우유 이름</label>
 					    <input type="text" class="form-control" id="email" placeholder="주문하실 우유 이름을 적어주세요!" name="oname">
@@ -188,6 +187,19 @@ bg-secondary
 					  </div>
 					  <button type="submit" class="btn btn-primary" style="font-weight:bold;">주문하기</button>
 					</form>
+			        <script>
+			        	function form(){
+			        		let oname = document.querySelector("#oname");
+			        		let onum = document.querySelector("#onum");
+			        		
+			        		if(oname.value == ""){alert("구매하실 우유의 이름을 작성해주세요!"); oname.focus(); return false;}
+			        		if(onum.value == ""){alert("구매하실 수량을 입력해주세요!!"); onum.focus(); return false;}
+			        		
+			        	}
+			        
+			        
+			        </script>
+			        
 			        
 			        <!--  -->
 			        <!--  -->
@@ -227,7 +239,7 @@ bg-secondary
 					    <label for="onum_update" class="form-label" style="font-weight:bold;">수정할 우유 갯수</label>
 					    <input type="number" class="form-control" id="onum_update" placeholder="수정할 갯수를 적어주세요" name="onum">
 					  </div>
-					  <button type="submit" class="btn btn-primary">주문하기</button>
+					  <button type="submit" class="btn btn-primary">수정하기</button>
 					</form>
 					
 			        <!--  -->
@@ -263,7 +275,7 @@ bg-secondary
 					    <input type="number" class="form-control" id="ono_delete" placeholder="취소하실 주문 번호를 적어주세요!" name="ono">
 					  </div>
 
-					  <button type="submit" class="btn btn-primary">주문하기</button>
+					  <button type="submit" class="btn btn-primary">취소하기</button>
 					</form>
 			      </div>
 			    </div>
