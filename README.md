@@ -1,3 +1,6 @@
+### 24 2025-03-24 :four_leaf_clover:
+오전- myaql에서 join, left join, right join을 배웠다.
+
 ### 23 2025-03-21 :four_leaf_clover:
 오전에는 mysql에서 쓸수있는 if문이랑 이것저것 배웠다..!! 이거 배우는게 제일 재밌다...
 
